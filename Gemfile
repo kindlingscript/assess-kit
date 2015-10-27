@@ -9,13 +9,17 @@ gem 'pg'
 # Use Bootstrap 3
 gem 'bootstrap-sass', '3.3.5.1'
 
-gem 'sprockets', '2.11.0
-'
+# Use sprockets
+gem 'sprockets', '2.11.0'
+
 # Use pagination
 gem 'kaminari'
 
 # Use simple_form
 gem 'simple_form'
+
+# User authentication
+gem 'devise', '>= 3.2.4'
 
 # Use SCSS for stylesheets
 # gem 'sass-rails', '~> 4.0.0'
