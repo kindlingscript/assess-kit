@@ -21,7 +21,7 @@ body {
 }
 
 .navbar.navbar-inverse {
-	background: url('/assets/tex2res4.png');
+	background: url('/assets/denim.png');
 	border-radius: 0;
 	box-shadow: -1px 2px 4px #161717;
 }
@@ -44,4 +44,9 @@ a {
 a:hover {
   text-decoration: none;
   color: gray;
+}
+
+.white, .white a {
+  color: #fff;
+  display: inline;
 }
