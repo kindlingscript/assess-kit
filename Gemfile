@@ -15,6 +15,12 @@ gem 'sprockets', '2.11.0'
 # Use pagination
 gem 'kaminari'
 
+# Use map integration
+gem 'geocoder'
+
+# Use Figaro
+gem 'figaro', '>= 1.0.0'
+
 # Use simple_form
 gem 'simple_form'
 
