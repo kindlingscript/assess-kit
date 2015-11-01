@@ -32,6 +32,15 @@ function initMap() {
 
   	<br />
 
+    <% @place.photos.each do |photo| %>
+      <div class="col-xs-12 col-sm-6">
+          <% if photo.present? %>
+            <%= photo %>
+          <% end %>
+            <%= photo.caption %>
+      </div>
+    <% end %>
+
 	<div class="pull-right">
 		<% if current_user && current_user == @place.user %>
 			<%= link_to 'Edit', edit_place_path(@place), :class => 'btn btn-primary' %>
@@ -41,6 +50,30 @@ function initMap() {
 </div>
 
 <div class="clearfix"></div>
+
+<div class="col-xs-10 col-xs-offset-1">  
+  <button type="button" class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="#myPhotoModal">
+    Add a photo
+  </button>
+</div>
+<div class="modal fade" id="myPhotoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Add a photo</h4>
+        </div>
+        <div class="modal-body">
+          <%= simple_form_for @photo, :url => place_photos_path(@place) do |f| %>
+            <%= f.input :caption %>
+            <br />
+            <%= f.submit "Add your photo", :class => 'btn btn-primary' %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+</div>
+
 <div class="col-xs-10 col-xs-offset-1">
   <h1 class="pull-left">Comments!</h1>
   <!-- Button trigger modal -->
