@@ -15,6 +15,12 @@ gem 'sprockets', '2.11.0'
 # Use pagination
 gem 'kaminari'
 
+# Use carrierwave for image upload
+gem 'carrierwave'
+
+# Use fog gem
+gem "fog", "~> 1.3.1"
+
 # Use map integration
 gem 'geocoder'
 
