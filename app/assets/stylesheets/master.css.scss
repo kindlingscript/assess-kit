@@ -23,20 +23,26 @@ body {
 .navbar.navbar-inverse {
 	background: url('/assets/denim.png');
 	border-radius: 0;
-	box-shadow: -1px 2px 4px #161717;
+	box-shadow: 0px 1px 3px #161717;
   margin-bottom:0;
 }
 
 .navbar-inverse .navbar-brand {
-  color: #f09022;
+  color: cornflowerblue;
   font-family: 'norwesterregular', sans-serif;
   font-size:26px;
 }
 
+.main {
+  position: absolute;
+  left: 50%;
+  margin-left: -50%;
+}
+
 .pagination {
   font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size:16px;
-  word-spacing:5px;
+  font-size:14px;
+  text-align: center;
 }
 
 a {
@@ -71,6 +77,7 @@ blockquote {
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }
+
 blockquote:before {
   color: #ccc;
   content: open-quote;
@@ -79,10 +86,10 @@ blockquote:before {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
+
 blockquote p {
   display: inline;
 }
-
 
 ul {
   padding:0 0 0 0;
@@ -90,7 +97,7 @@ ul {
 }
 ul li {
   list-style:none;
-  margin-bottom:25px;
+  margin-bottom:0px;
 }
 ul li img {
   cursor: pointer;
