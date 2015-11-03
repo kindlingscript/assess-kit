@@ -44,10 +44,12 @@
 		<br /><br />
 
 	<% if place.photos.present? %>
+      <div class="col-sm-6 col-md-5">
 		    <%= image_tag place.photos.last.picture, :class => 'img-thumbnail center-block' %>
           <div class="photo-caption">
             <p><small><%= place.photos.last.caption %></small></p>
           </div>
+      </div>
 	<% end %>
 
 	<% if place.comments.present? %>
