@@ -96,11 +96,11 @@ function initMap() {
             <%= f.input :message %>
             <%= f.input :rating, :as => :select, :collection => Comment::RATINGS %>
         </div>
-        <div class="modal-footer">
+          <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             <%= f.submit "Add your comment", :class => 'btn btn-primary' %>
-          <% end %>
-        </div>
+            </div>
+        <% end %>
       </div>
     </div>
   </div>
