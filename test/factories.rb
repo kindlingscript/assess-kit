@@ -16,7 +16,7 @@ FactoryGirl.define do
 
 	factory :place do
 		name "Denny's Skatepark"
-		description "Tons of ramps and slides"
+		description "Locally owned skatepark since 1983."
 		address "123 Sample Street"
 		association :user
 	end
