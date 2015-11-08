@@ -15,6 +15,9 @@ gem 'sprockets', '2.11.0'
 # Use pagination
 gem 'kaminari'
 
+# Use FactoryGirl for tests (TDD)
+gem 'factory_girl_rails', '~> 4.0'
+
 # Use carrierwave for image upload
 gem 'carrierwave'
 
